@@ -19,33 +19,37 @@
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 myObj = JSON.parse(this.responseText);
-                txt += "<table border='1'>"
 
                 for (i = 0; i < myObj[sel].length; i++) {
                     if (sel === "biler"){
+                        txt += "<table border='1'>"
                         let element = myObj[sel][i];
-                        txt += "<tr><td>" + element.id + "</td></tr>";
-                        txt += "<tr><td>" + element.mærke + "</td></tr>";
-                        txt += "<tr><td>" + element.model + "</td></tr>";
-                        txt += "<tr><td>" + element.årgang + "</td></tr>";
+                        txt += "<tr><td>ID</td><td>" + element.id + "</td></tr>";
+                        txt += "<tr><td>Mærke</td><td>" + element.mærke + "</td></tr>";
+                        txt += "<tr><td>Model</td><td>" + element.model + "</td></tr>";
+                        txt += "<tr><td>Årgang</td><td>" + element.årgang + "</td></tr>";
+                        txt += "</table><br>"
                     }
                     else if (sel === "brugere"){
+                        txt += "<table border='1'>"
                         let element = myObj[sel][i];
-                        txt += "<tr><td>" + element.id + "</td></tr>";
-                        txt += "<tr><td>" + element.fornavn + "</td></tr>";
-                        txt += "<tr><td>" + element.efternavn + "</td></tr>";
-                        txt += "<tr><td>" + element.fødselsdato + "</td></tr>";
+                        txt += "<tr><td>ID</td><td>" + element.id + "</td></tr>";
+                        txt += "<tr><td>Fornavn</td><td>" + element.fornavn + "</td></tr>";
+                        txt += "<tr><td>Efternavn</td><td>" + element.efternavn + "</td></tr>";
+                        txt += "<tr><td>Fødselsdato</td><td>" + element.fødselsdato + "</td></tr>";
+                        txt += "</table><br>"
                     }
                     else if (sel === "bookinger"){
+                        txt += "<table border='1'>"
                         let element = myObj[sel][i];
-                        txt += "<tr><td>" + element.id + "</td></tr>";
-                        txt += "<tr><td>" + element.bruger + "</td></tr>";
-                        txt += "<tr><td>" + element.bil + "</td></tr>";
-                        txt += "<tr><td>" + element.udløber + "</td></tr>";
+                        txt += "<tr><td>ID</td><td>" + element.id + "</td></tr>";
+                        txt += "<tr><td>Bruger</td><td>" + element.bruger + "</td></tr>";
+                        txt += "<tr><td>Bil</td><td>" + element.bil + "</td></tr>";
+                        txt += "<tr><td>Udløber</td><td>" + element.udløber + "</td></tr>";
+                        txt += "</table><br>"
                     }
                 }
 
-                txt += "</table>"
                 document.getElementById("demo").innerHTML = txt;
             }
         };
