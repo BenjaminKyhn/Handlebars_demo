@@ -3,10 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  let obj = {
-    "id": "1337"
-  };
-  res.send(obj);
+  res.sendFile('/public/biler.json', { root: 'C:/Users/benky/Node/Handlebars' })
 });
 
 module.exports = router;
