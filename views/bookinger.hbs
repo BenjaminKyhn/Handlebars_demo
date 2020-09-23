@@ -53,7 +53,7 @@
                 document.getElementById("demo").innerHTML = txt;
             }
         };
-        xmlhttp.open("GET", "bookinger.json", true);
+        xmlhttp.open("GET", "/data/bookinger.json", true);
         xmlhttp.setRequestHeader("Content-type", "application/json");
         xmlhttp.send("x=" + dbParam);
     }
