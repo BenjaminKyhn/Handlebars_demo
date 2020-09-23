@@ -1,56 +1,62 @@
 {
-    "biler": {
-        "bil1": {
+    "biler": [
+        {
             "id": "00001",
             "mærke": "Ford",
             "model": "F-150",
             "årgang": "2009"
         },
-        "bil2": {
+        {
             "id": "00002",
             "mærke": "Volkswagen",
             "model": "Golf",
             "årgang": "1997"
         },
-        "bil3": {
+        {
             "id": "00003",
             "mærke": "Toyota",
             "model": "Hilux",
             "årgang": "2013"
         }
-    },
-    "brugere": {
-        "bruger1": {
+    ],
+    "brugere": [
+        {
+            "id": "937532458",
             "fornavn": "Memeboi",
             "efternavn": "Nielsen",
             "fødselsdato": "1992-09-23"
         },
-        "bruger2": {
+        {
+            "id": "937111458",
             "fornavn": "Mongo",
             "efternavn": "Boy",
             "fødselsdato": "2016-06-17"
         },
-        "bruger3": {
+        {
+            "id": "111",
             "fornavn": "Benny",
             "efternavn": "Boy",
             "fødselsdato": "1957-02-28"
         }
-    },
-    "bookinger": {
-        "booking1": {
+    ],
+    "bookinger": [
+        {
+            "id": "43632",
             "bruger": "bruger1",
             "bil": "bil3",
             "udløber": "2020-10-23"
         },
-        "booking2": {
+        {
+            "id": "ery4ey",
             "bruger": "bruger2",
             "bil": "bil2",
             "udløber": "2021-04-17"
         },
-        "booking3": {
+        {
+            "id": "3265uyt",
             "bruger": "bruger3",
             "bil": "bil1",
             "udløber": "2021-08-06"
         }
-    }
+    ]
 }
