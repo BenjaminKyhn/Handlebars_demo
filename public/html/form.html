@@ -41,13 +41,17 @@
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>
                 </select>
-                
+            </div>
+            
+            <div class="form-group">
                 <select class="form-control">
                     <option value="3 døre">3 døre</option>
                     <option value="4 døre">4 døre</option>
                     <option value="5 døre">5 døre</option>
                 </select>
-                
+            </div>
+            
+            <div class="form-group"> 
                 <select multiple class="form-control">
                     <option value="2005">2005</option>
                     <option value="2006">2006</option>
@@ -68,20 +72,30 @@
                 </select>
             </div>
             
-            <div class="form-group">        
-                <input type="radio" id="red" name="colour" value="red">
-                <label for="male">Red</label><br>
-                <input type="radio" id="black" name="colour" value="black">
-                <label for="female">Black</label><br>
-                <input type="radio" id="metallicGrey" name="colour" value="metallicGrey">
-                <label for="other">Metallic-Grey</label>
+            <div class="form-group">     
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="red" name="colour" class="custom-control-input" value="red">
+                    <label class="custom-control-label" for="red">Red</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="black" name="colour" class="custom-control-input" value="black">
+                    <label class="custom-control-label" for="black">Black</label>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" id="metallicGrey" name="colour" class="custom-control-input" value="metallicGrey">
+                    <label class="custom-control-label" for="metallicGrey">Metallic-Grey</label>
+                </div>
             </div>
             
-            <div class="form-group">
-                <input type="checkbox">
-                <label>Anhængertræk</label>
-                <input type="checkbox">
-                <label>ABS</label>
+            <div class="form-group">  
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">Anhængertræk</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="form-check-input">
+                    <label class="form-check-label">ABS</label>
+                </div>
             </div>
             
             <button type="submit" class="btn btn-primary mb-2">Indsend booking</button>
