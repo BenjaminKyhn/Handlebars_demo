@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var bookingRouter = require('./routes/bookinger');
 var farverRouter = require('./routes/farver');
 var omRouter = require('./routes/om');
+var formRouter = require('./routes/form');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/bookinger', bookingRouter);
 app.use('/farver', farverRouter);
 app.use('/om', omRouter);
+app.use('/form', formRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
