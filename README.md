@@ -8,6 +8,7 @@ Dette er en Express JS demo, der benytter en Handlebars template til at lave en 
 * Routes
 * En HTML form lavet med Bootstrap
 * Bruger JavaScript og JSON til at udfylde en tabel
+* Dockerfile til deployment til et dockermiljø
 
 
 ## Besvarelse af spørgsmål til opgaven
