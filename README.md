@@ -10,6 +10,9 @@ Dette er en Express JS demo, der benytter en Handlebars template til at lave en 
 * Bruger JavaScript og JSON til at udfylde en tabel
 * Dockerfile til deployment til et dockermiljø
 
+## Docker
+1. Kør kommandoen "docker build -t <your username>/node-web-app ."
+2. Kør kommandoen "docker run -p 49161:3000 -d <your username>/node-web-app"
 
 ## Besvarelse af spørgsmål til opgaven
 * Sammenling JSON med XML og CSV filer - JSON er kortere at skrive og kan bruge arrays.
