@@ -1,12 +1,12 @@
 # Handlebars_demo
-This is a small demo that shows how to use the Handlebars template to create a HTTP server. See more at https://expressjs.com/  
+Dette er en Express JS demo, der benytter en Handlebars template til at lave en HTTP server. Se mere på https://expressjs.com/
 
 ## Features
 * Express HTTP server
 * HTML variables with Handlebars
 * Routes
-* An HTML form made with Bootstrap
-* Using JavaScript and JSON to populate a table
+* En HTML form lavet med Bootstrap
+* Bruger JavaScript og JSON til at udfylde en tabel
 
 ## Besvarelse af spørgsmål til opgaven
 * Sammenling JSON med XML og CSV filer - JSON er kortere at skrive og kan bruge arrays.
